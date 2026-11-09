@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Form</title>
+<form action="/submit-profile" method="POST">
+  
+  <!-- First Name Input -->
+  <div class="form-group">
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first_name" placeholder="name" required>
+  </div>
+
+  <!-- Last Name Input -->
+  <div class="form-group">
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last_name" placeholder="surname" required>
+  </div>
+
+  <!-- Gender Radio Buttons -->
+  <div class="form-group">
+    <p>Gender:</p>
+    <input type="radio" id="gender-female" name="gender" value="female" required>
+    <label for="gender-female">Female</label>
+    
+    <input type="radio" id="gender-male" name="gender" value="male">
+    <label for="gender-male">Male</label>
+    
+    <input type="radio" id="gender-other" name="gender" value="other">
+    <label for="gender-other">Other / Prefer not to say</label>
+  </div>
+
+  <!-- Date of Birth Input -->
+  <div class="form-group">
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="date_of_birth" required>
+  </div>
+
+  <!-- Email Input -->
+  <div class="form-group">
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="jane.doe@example.com" required>
+  </div>
+
+  <!-- Submit Button -->
+  <div class="form-group">
+    <button type="submit">Submit Info</button>
+  </div>
+
+</form>
